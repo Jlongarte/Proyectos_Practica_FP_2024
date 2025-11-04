@@ -1,0 +1,51 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.aboutMe > img {
+  object-fit: contain;
+  border-radius: 50%;
+  width: 20%;
+}
+.aboutMe > p {
+  text-align: center;
+  padding: 0px 200px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+li {
+  padding: 10px;
+  background-color: rgb(13, 155, 108);
+}
+
+/*Media query para movil*/
+
+@media only screen and (max-width: 767px) {
+  .aboutMe {
+    padding: 10px;
+  }
+  .aboutMe > img {
+    width: 50%;
+  }
+  .aboutMe > p {
+    padding: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

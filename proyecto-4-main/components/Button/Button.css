@@ -1,0 +1,38 @@
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-info,
+.btn-skills {
+  padding: 20px;
+  font-size: 1.3rem;
+  color: var(--white);
+  border: 1px solid var(--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-info:hover,
+.btn-skills:hover {
+  background-color: var(--principal);
+  color: #ffd17b;
+}
+
+.btn-footer {
+  border: 1px solid var(--white);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.btn-footer:hover {
+  background-color: blueviolet;
+}
