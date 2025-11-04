@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee Shop: Flex + Dom Practice">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Coffe Shop: Flex + DOM</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-desktop">
+            <div class="container">
+                <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/logo-ravado2.png"
+                    alt="logo-ravado2">
+                <ul>
+                    <li>home</li>
+                    <li>shop</li>
+                    <li>blog</li>
+                    <li>pages</li>
+                    <li>about us</li>
+                    <li>contact us</li>
+                </ul>
+                <ul>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li id="theme"><i class="fas fa-lightbulb"></i></li>
+                </ul>
+            </div>
+        </section>
+        <section class="header-mobile">
+            <div class="container">
+                <ul>
+                    <li><img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
+                            alt="Icono móvil hamburguesa"></li>
+                    <li>
+                        <form action="/buscar" method="GET">
+                            <input type="text" name="query" placeholder="Buscar..." required>
+                            <input type="submit" value="Buscar">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>love our vast variety of coffees</h1>
+                <h2>¡choose your coffee or let our experts advice you!</h2>
+                <button>shop now</button>
+            </div>
+        </section>
+        <div class="container">
+            <aside>
+                <div class="filtro-cafe">
+                    <h4>Tipos de Café</h4>
+                    <div class="busqueda">
+                        <input type="text" placeholder="Buscar ...">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cafe">
+                        <label><input type="checkbox"> Espresso (357)</label>
+                    </div>
+                    <div class="cafe">
+                        <label><input type="checkbox"> Cappuccino (441)</label>
+                    </div>
+                    <div class="cafe">
+                        <label><input type="checkbox"> Latte (467)</label>
+                    </div>
+                    <div class="cafe">
+                        <label><input type="checkbox"> Americano (278)</label>
+                    </div>
+                    <a href="#" class="ver-mas">Ver más</a>
+                </div>
+                <article>
+                    <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/banner-rava-01.jpg"
+                        alt="Summer Sale">
+                    <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/banner-rava-02.jpg"
+                        alt="Appliance discount">
+                    <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/banner-rava-05.jpg"
+                        alt="Appliance discount">
+                    <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/banner-rava-06.jpg"
+                        alt="Appliance discount">
+                    <img src="https://demo-41.woovinapro.com/wp-content/uploads/2020/07/banner-rava-07.jpg"
+                        alt="Appliance discount">
+
+                </article>
+            </aside>
+            <section class="products">
+                <article>
+                    <h3>Featured Categories</h3>
+                    <div id="feature-products"></div>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+<footer>
+
+    <p><a href="https://www.linkedin.com/in/%F0%9F%92%BB-janire-gonzalez-13aa78258/">&copy;Garayoa - 2024</a></p>
+
+</footer>
+
+</html>

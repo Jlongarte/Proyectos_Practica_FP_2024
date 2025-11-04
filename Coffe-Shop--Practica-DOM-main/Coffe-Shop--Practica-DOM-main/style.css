@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #000;
+  --color-secundario: #fff;
+  --acento: #e97013;
+  --texto: #464646;
+  --fondo: #d0d0d0;
+}
+
+h1 {
+  color: var(--color-secundario);
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: start;
+  border-bottom: 5px solid var(--acento);
+}
+
+h2 {
+  color: var(--color-secundario);
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: start;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--acento);
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+button {
+  color: var(--color-secundario);
+  background-color: var(--color-principal);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--acento);
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  color: var(--texto);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--acento);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dark {
+  background-color: var(--color-principal);
+}
+/*HEADER*/
+
+.header-desktop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 80px;
+  padding: 10px;
+}
+
+.header-desktop .container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#theme {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--acento);
+  border: 1px solid var(--acento);
+  border-radius: 45%;
+}
+
+#theme:hover {
+  color: var(--color-secundario);
+  background-color: var(--color-principal);
+  border: none;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.search-container {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*MAIN*/
+
+/*Hero*/
+
+.hero {
+  background-image: url("https://imagenes.elpais.com/resizer/v2/NGANPURBJJHTFJTDLJOYIEJQGY.png?auth=f04569bcd9f4a71482a26f741eb1fe4a851c64b5ee2d3efac92cf663b6913dff&width=980");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*MAIN*/
+main {
+  background-color: #fff7db;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Espacio entre la hero y los productos */
+}
+
+/*Aside*/
+aside {
+  width: 40%;
+  margin: 50px 10px;
+}
+
+.filtro-cafe {
+  border: 2px solid var(--acento);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--color-secundario);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.busqueda input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ver-mas {
+  text-align: center;
+  color: var(--acento);
+}
+
+/* Products */
+.products {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.products > article {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside > article > img {
+  width: 100%;
+  height: auto;
+}
+
+#feature-products {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#feature-products img {
+  width: 100%;
+  height: auto;
+}
+
+.feature-product {
+  width: 180px;
+  background-color: var(--color-secundario);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px 0px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-product:hover {
+  transform: translateY(-5px);
+}
+
+.feature-product img {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-product h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.feature-product p {
+  font-size: 1em;
+  color: var(--texto);
+  margin: 10px 0;
+}
+
+footer {
+  background-color: var(--color-principal);
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+
+footer a {
+  color: var(--acento);
+}
+
+/*RESPONSIVE*/
+
+/*Tablet*/
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .header-desktop > .container > ul:first-of-type {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+    background-color: var(--fondo);
+  }
+
+  .header-mobile > .container > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-mobile > .container > ul > li > img {
+    width: 50px;
+    height: auto;
+  }
+
+  .hero .container {
+    width: 80%;
+  }
+  main > .container {
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    width: 90%;
+    margin: 50px 10px;
+  }
+  .filtro-cafe {
+    padding: 50px;
+  }
+  .busqueda > button {
+    width: 30%;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+  .header-desktop > .container > ul:first-of-type {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+    background-color: var(--fondo);
+  }
+
+  .header-mobile > .container > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-mobile > .container > ul > li > img {
+    width: 40px;
+    height: auto;
+  }
+  input[type="text"] {
+    width: 150px;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .hero .container {
+    width: 80%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  button {
+    width: 70%;
+  }
+  .hero .container {
+    width: 80%;
+  }
+  main > .container {
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    width: 90%;
+    margin: 50px 10px;
+  }
+  .filtro-cafe {
+    padding: 50px;
+  }
+  .busqueda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .busqueda > button {
+    width: 88%;
+  }
+  .products {
+    width: 100%;
+  }
+
+  .feature-product {
+    width: 100%;
+  }
+}
