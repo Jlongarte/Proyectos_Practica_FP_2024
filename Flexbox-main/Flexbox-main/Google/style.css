@@ -1,0 +1,276 @@
+/*Estilos Generales*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  margin-left: 10px;
+  background-color: rgb(79, 160, 252);
+  color: white;
+  font-size: 12px;
+  border: none;
+  padding: 12px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(216, 0, 0);
+}
+
+/*Barra de Navegación*/
+
+header {
+  height: 20vh;
+}
+
+nav.desktop {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+nav.desktop > ul {
+  display: flex;
+}
+
+nav.desktop > ul > li {
+  list-style: none;
+}
+
+nav.desktop > ul > li > a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav.movil {
+  display: none;
+}
+
+nav.movil li a {
+  text-transform: uppercase;
+}
+
+header img {
+  width: 17px;
+}
+
+.user {
+  background-color: rgb(39, 113, 85);
+  height: 30px;
+  width: 30px;
+  padding: 5px 9px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/*Main*/
+
+main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+main img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+form {
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.main-input-container {
+  width: 525px;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  max-width: 100%;
+}
+
+.main-input-container input {
+  min-width: 200px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.main-input-container:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+}
+
+.search-icon {
+  background-image: url("assets/search-icon-png-9966.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.micro-icon {
+  background-image: url("assets/7123011_google_mic_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.accesos-directos {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.accesos-directos img {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: cover;
+  background-color: rgba(225, 227, 225, 1);
+  border-radius: 50%;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(225, 227, 225, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: rgb(255, 115, 0);
+  text-decoration: underline;
+}
+
+/* Media Query para tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.movil {
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+  }
+
+  header {
+    height: 15vh;
+  }
+
+  .main-input-container {
+    max-width: 450px;
+  }
+}
+
+/* Media Query para escritorio */
+@media screen and (min-width: 1024px) {
+  .movil {
+    display: none;
+  }
+
+  nav.desktop {
+    display: flex;
+  }
+
+  header {
+    height: 15vh;
+    padding: 5px;
+  }
+  nav.movil > ul {
+    list-style: none;
+  }
+  .main-input-container {
+    max-width: 525px;
+  }
+
+  .accesos-directos img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+  footer {
+    flex-direction: row;
+  }
+}
+
+/* Media Query para móvil */
+@media screen and (max-width: 767px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.movil {
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  nav.movil > ul {
+    list-style: none;
+  }
+
+  header {
+    height: 15vh;
+    padding: 5px;
+  }
+
+  .main-input-container {
+    max-width: 250px;
+  }
+
+  .accesos-directos img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+
+  footer {
+    padding: 40px;
+  }
+}
