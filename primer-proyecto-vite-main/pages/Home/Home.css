@@ -1,0 +1,97 @@
+.home {
+  padding: 0 8rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  background-image: url("/public/assets/mainFoto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.71);
+  color: white;
+  height: 65vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home .container h1 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .container p {
+  padding: 0px 100px;
+  text-align: center;
+}
+.home .container a {
+  font-size: 1rem;
+  padding: 15px 35px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+.home .container a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Estilos responsivos para tablets */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .home {
+    padding: 0 4rem;
+  }
+
+  .home .container h1 {
+    font-size: 4rem;
+  }
+
+  .home .container p {
+    padding: 0px 50px;
+  }
+
+  .home .container a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 700px) {
+  .home {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .home .container {
+    height: auto;
+    padding: 10px;
+  }
+
+  .home .container h1 {
+    font-size: 3rem;
+  }
+
+  .home .container p {
+    padding: 0;
+  }
+
+  .home .container a {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+}

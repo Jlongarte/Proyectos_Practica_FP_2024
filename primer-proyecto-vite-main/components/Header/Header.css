@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  flex-wrap: wrap;
+  height: 10vh;
+  background-color: black;
+}
+
+.header h1 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  flex-wrap: wrap;
+}
+
+nav > ul {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #9845e8;
+  padding: 20px;
+}
+
+/* Estilos responsivos para tablets */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 700px) {
+  .header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
